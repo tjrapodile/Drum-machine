@@ -1,24 +1,23 @@
 import { useContext } from "react";
 import { Context } from "../Context";
 
-import Switch from "@material-ui/core/Switch";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import { withStyles } from "@material-ui/core/styles";
+import Switch from "@mui/material/Switch";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import { styled } from "@mui/material/styles";
 
 // Create a switch with custom styling
-const RedSwitch = withStyles({
-  switchBase: {
+const RedSwitch = styled(Switch)(({ theme }) => ({
+  '& .MuiSwitch-switchBase': {
     color: "#FFFFFF",
-    "&$checked": {
+    '&.Mui-checked': {
       color: "#ca3e47",
     },
-    "&$checked + $track": {
+    '&.Mui-checked + .MuiSwitch-track': {
       backgroundColor: "#ca3e47",
     },
   },
-  checked: {},
-  track: {},
-})(Switch);
+  '& .MuiSwitch-track': {},
+}));
 
 function Switches() {
   const { switches, handleChange } = useContext(Context);
