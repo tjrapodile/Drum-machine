@@ -12,10 +12,6 @@ Audio Elements-Each drum pad contains an HTML5 audio element with a src attribut
 Keyboard Control-Users can trigger each drum pad by pressing the corresponding key on their keyboard, with the associated sound being played.
 Sound Display- When a drum pad is triggered (either by clicking or pressing the corresponding key), the name of the audio clip is displayed in the display element.
 
-Project Structure:
-index.html- Contains the basic structure and references to the JavaScript and CSS files.
-style.css- Provides the styling for the drum machine, ensuring a clean and intuitive user interface.
-index.js- Contains the React components and logic for the drum machine's functionality, handling user interactions, and updating the display.
 
 Technologies Used:
 React- The frontend framework used to build the interactive components of the drum machine.
