@@ -32,9 +32,8 @@ Install the necessary dependencies:
 npm install
 
 Start the application:
-npm start
+npm run dev
 
-Open the index.html file in your preferred web browser to start using the drum machine.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
